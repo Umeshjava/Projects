@@ -1,0 +1,95 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 500;
+size: 30px;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../image/Pizza.jpg');
+    background-size: cover;
+}
+.raw{
+    max-width: 1180px;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    transition: 00.5s;
+}
+.raw h1:hover{
+    color: orange;
+}
+.raw-menu{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.raw-menu a{
+    text-decoration: none;
+    color: white;
+    border-bottom: transparent solid 2px;
+    transition: 00.5s;
+}
+.raw-menu a:hover{
+    color:orange;
+    border-bottom: orange 2px solid;
+}
+.main{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: white;
+    font-size: 120%;
+}
+.main a{
+    text-decoration: none;
+    color: white;
+    width: 230px;
+    text-align: center;
+    padding: 10px 20px; 
+    display: inline-block;
+    margin-top: 20px;
+    border: solid 1px white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 00.5s linear;
+}
+.main a:hover{
+    border: solid 1px orange;
+    color: white;
+    background-color: orange;
+}
+.main span{
+    animation: blink infinite 2s 1s;    
+}
+@keyframes blink{
+    0% {color:aqua;}
+    5% {color: orange;}
+    10% {color: floralwhite;}
+    15% {color: pink;}
+    20% {color: aqua;}
+    25% {color: palegreen;}
+    30% {color: navajowhite;}
+    35% {color: salmon;}
+    40% {color: olivedrab;}
+    45% {color: indianred;}
+    50% {color: palegreen;}
+    55% {color: orange;}
+    60% {color: green;}
+    65% {color: pink;}
+    70% {color: sandybrown;}
+    75% {color: red;}
+    80% {color: navajowhite;}
+    85% {color: salmon;}
+    90% {color: olivedrab;}
+    95% {color: indianred;}
+    100% {color: palegreen;}
+}
